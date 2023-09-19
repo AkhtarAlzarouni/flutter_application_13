@@ -1,6 +1,8 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_13/screens/calls.dart';
+import 'package:flutter_application_13/screens/camera.dart';
 import 'package:flutter_application_13/screens/chats.dart';
 import 'package:flutter_application_13/screens/setting.dart';
 import 'package:flutter_application_13/screens/status.dart';
@@ -18,6 +20,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return DefaultTabController(
       length: 4,
       child: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.green,
+          onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatsScreen(),));
+        },
+        child: Icon(Icons.chat,),),
         appBar: AppBar(
           backgroundColor: Colors.green,
           actions: [
@@ -60,10 +68,11 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
 
       body: TabBarView(children: [
-        Center(child: Text("Camera")),
+        CameraScreen(),
         ChatsScreen(),
         StatusScreen(),
-        Center(child: Text("Chats")),
+        CallScreen(),
+        
       ]),
     ),
     );

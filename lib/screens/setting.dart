@@ -10,10 +10,14 @@ class SettingScreen extends StatefulWidget {
 
 class _SettingScreenState extends State<SettingScreen> {
    List<Setting> char=[
-    Setting(name: "Chat",image: Icon(Icons.chat),det: "Hi"),
-    Setting(name: "Notificacion",image: Icon(Icons.notification_add),det: "Hi"),
-    Setting(name: "Help",image: Icon(Icons.help),det: "Hi"),
-    Setting(name: "Account",image: Icon(Icons.account_balance),det: "Hi"),
+    Setting(name: "Chat",image: Icon(Icons.chat),det: "chating"),
+    Setting(name: "Notificacion",image: Icon(Icons.notification_add),det: "Notificacion"),
+    Setting(name: "Help",image: Icon(Icons.help),det: "need help"),
+    Setting(name: "Account",image: Icon(Icons.account_balance),det: "your account"),
+     Setting(name: "Chat",image: Icon(Icons.chat),det: "chating"),
+    Setting(name: "Notificacion",image: Icon(Icons.notification_add),det: "Notificacion"),
+    Setting(name: "Help",image: Icon(Icons.help),det: "need help"),
+    Setting(name: "Account",image: Icon(Icons.account_balance),det: "your account"),
    ];
   @override
   Widget build(BuildContext context) {
